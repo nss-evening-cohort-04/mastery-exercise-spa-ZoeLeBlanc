@@ -1,0 +1,46 @@
+{
+  "cars": [
+    {
+      "make": "Hyundai",
+      "color": "Red",
+      "year": "2011",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Buick",
+      "color": "Blue",
+      "year": "2012",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Tesla",
+      "color": "Black",
+      "year": "2016",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Hyundai",
+      "color": "Red",
+      "year": "2011",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Buick",
+      "color": "Blue",
+      "year": "2012",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Tesla",
+      "color": "Black",
+      "year": "2016",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.card {
+	border: 1px solid black;
+}
+.form-control {
+	width: 70%;
+}
+.container-fluid {
+	padding-top: 2em;
+}
+.card-text {
+	margin: 1em;
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+}
