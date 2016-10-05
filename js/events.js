@@ -12,8 +12,8 @@ activateCars.activateEvents = function(carClicks, inputSubmit) {
 			 }
 			document.getElementById(finalId).setAttribute("selected", "true");
 			inputSubmit.value = "";
-			var height = prompt("Enter a border height");
-			var color = prompt("Select a color");
+			var height = prompt("Enter a border height. Type thin, medium, or thick.");
+			var color = prompt("Enter a color. Type blue, purple, red, yellow, etc...");
 			console.log(finalId);
 			CarLot.addStyles(finalId, height, color);
 			var description = document.getElementById(finalId).querySelector("p");
