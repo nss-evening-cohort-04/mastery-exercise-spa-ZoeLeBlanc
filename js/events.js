@@ -14,16 +14,15 @@ activateCars.activateEvents = function(carClicks, inputSubmit) {
 			inputSubmit.value = "";
 			var height = prompt("Enter a border height. Type thin, medium, or thick.");
 			var color = prompt("Enter a color. Type blue, purple, red, yellow, etc...");
-			console.log(finalId);
 			CarLot.addStyles(finalId, height, color);
 			var description = document.getElementById(finalId).querySelector("p");
 			inputSubmit.value = description.innerHTML; 
-			inputSubmit.focus();
+			//fixed focus issue
+			setTimeout(function(){inputSubmit.focus();}, 1);
 			inputSubmit.addEventListener("keypress", function(event){
 				if (document.getElementById(finalId).hasAttribute("selected")){
 					if (event.keyCode !== 13) {
 					description.innerHTML = inputSubmit.value;
-					//console.log(description.innerHTML);
 					} else {
 					inputSubmit.value = "";
 					CarLot.resetStyles(finalId);

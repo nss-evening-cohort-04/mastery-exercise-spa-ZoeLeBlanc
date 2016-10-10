@@ -4,7 +4,6 @@ function populatePage (inventoryList) {
 	currentCar = "";
 	for (var counter = 0; counter < inventoryList.length; counter++) {
 	  		if (counter % 3 === 0){
-	  			console.log("start", counter);
 	  			currentCar += '<div class="row">';
 	  		}
   			currentCar += '<div class="col-md-4">';
@@ -23,7 +22,6 @@ function populatePage (inventoryList) {
   				currentCar += '</div>'; 
   			currentCar += '</div>';
 	  		if ((counter-2) %3 === 0){
-	  			console.log("end", counter);
 	  			currentCar += '</div>';
 	  		}
 		
