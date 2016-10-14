@@ -1,13 +1,18 @@
 var CarLot = (function (styleCars) {
 
-styleCars.addStyles = function(cardId, cardBorder, cardColor) {
-	document.getElementById(cardId).style.borderWidth = cardBorder;
-	document.getElementById(cardId).style.backgroundColor = cardColor;
+styleCars.addStyles = function(cardId, cardColor, cardBorder) {
+	
+	document.getElementById(cardId.id).style.backgroundColor = cardColor;
+	document.getElementById(cardId.id).style.backgroundColor = cardBorder;
 	
 };
-styleCars.resetStyles = function(cardId){
-	document.getElementById(cardId).style.borderWidth = "";
-	document.getElementById(cardId).style.backgroundColor = "";
+styleCars.resetStyles = function(cardDiv){
+	for (var i = 0; i < cardDiv.length; i++){
+
+		document.getElementById(cardDiv[i].id).style.borderWidth = "";
+	document.getElementById(cardDiv[i].id).style.backgroundColor = "";
+	}
+	
 	
 }
 return styleCars
