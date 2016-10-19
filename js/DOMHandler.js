@@ -7,7 +7,7 @@ function populatePage (inventoryList) {
 	  			currentCar += '<div class="row">';
 	  		}
   			currentCar += '<div class="col-md-4">';
-  				currentCar += '<div class="card" id=' +counter + '>';
+  				currentCar += '<div class="card" id=counter' +counter + '>';
 		  			currentCar += '<div class="card-block">';
 		  			currentCar += '<h4 class="card-title">Make: ' + inventoryList[counter].make +'</h4>';
 		  			currentCar += '</div>';
