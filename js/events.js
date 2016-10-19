@@ -8,7 +8,7 @@ activateCars.activateEvents = function(carClicks, inputSubmit) {
 			//Clear everything
 			CarLot.resetStyles(carClicks);
 			var clickedCar = "";
-			var description = "";
+			
 			console.log("new description", description);
 			inputSubmit.value = "";
 			console.log("new inputSubmit", inputSubmit.value);
@@ -24,16 +24,20 @@ activateCars.activateEvents = function(carClicks, inputSubmit) {
 			//Get Input
 			var descriptionParent = clickedCar.children[4];
 			description = descriptionParent.children[0];
-			inputSubmit.focus();
+			
+		
 			inputSubmit.value = description.innerText;
-			console.log("inputSubmit", inputSubmit.value);
-			inputSubmit.addEventListener("input", function(event){
-				// console.log(description.parentNode);
-				// inputSubmit.value = description;
-				description.innerText = inputSubmit.value;
-				console.log("descriptionHTML", description);
-			});	
+			inputSubmit.focus();
+
 		});
+		inputSubmit.addEventListener("keyup", function(event){
+			if(event.keyCode !== 13){
+				description.innerText = inputSubmit.value;
+			} else {
+				inputSubmit.value="";
+				description = "";
+			}
+		});	
 	}
 		
 };

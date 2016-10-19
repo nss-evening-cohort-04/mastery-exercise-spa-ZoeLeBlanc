@@ -7,7 +7,7 @@ function populatePage (inventoryList) {
 	  			currentCar += '<div class="row">';
 	  		}
   			currentCar += '<div class="col-md-4">';
-  				currentCar += '<div class="card" id=counter' +counter + '>';
+  				currentCar += '<div class="card" id="counter' +counter + '">';
 		  			currentCar += '<div class="card-block">';
 		  			currentCar += '<h4 class="card-title">Make: ' + inventoryList[counter].make +'</h4>';
 		  			currentCar += '</div>';
@@ -17,7 +17,7 @@ function populatePage (inventoryList) {
 		  			currentCar += '<li class="list-group-item">Price: ' + inventoryList[counter].price + '</li>';
 		  			// currentCar += '</ul>';
 		  			currentCar += '<div class="card-block">';
-		  				currentCar += '<p class="card-text">Description: ' + inventoryList[counter].description + '</p>';
+		  				currentCar += '<p class="card-text" id="counter'+counter+'">Description: ' + inventoryList[counter].description + '</p>';
 		  			currentCar += '</div>';
   				currentCar += '</div>'; 
   			currentCar += '</div>';
